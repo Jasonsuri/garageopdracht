@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="garage@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="garage">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="database php"/>
+    <schema id="4" parent="1" name="databasephp"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="inlogsysteem"/>
+    <schema id="7" parent="1" name="mysql"/>
+    <schema id="8" parent="1" name="performance_schema"/>
+    <schema id="9" parent="1" name="phpmyadmin"/>
+    <schema id="10" parent="1" name="test"/>
+    <table id="11" parent="2" name="auto"/>
+    <table id="12" parent="2" name="klant"/>
+    <table id="13" parent="2" name="users"/>
+    <column id="14" parent="11" name="klantid">
+      <Position>1</Position>
+      <DataType>int(70)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="15" parent="11" name="autokenteken">
+      <Position>2</Position>
+      <DataType>varchar(75)|0</DataType>
+    </column>
+    <column id="16" parent="11" name="automerk">
+      <Position>3</Position>
+      <DataType>varchar(75)|0</DataType>
+    </column>
+    <column id="17" parent="11" name="autotype">
+      <Position>4</Position>
+      <DataType>varchar(75)|0</DataType>
+    </column>
+    <column id="18" parent="11" name="autokmstand">
+      <Position>5</Position>
+      <DataType>int(70)|0</DataType>
+    </column>
+    <key id="19" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>klantid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="20" parent="12" name="klantid">
+      <Position>1</Position>
+      <DataType>int(75)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="21" parent="12" name="klantnaam">
+      <Position>2</Position>
+      <DataType>varchar(75)|0</DataType>
+    </column>
+    <column id="22" parent="12" name="klantadres">
+      <Position>3</Position>
+      <DataType>varchar(75)|0</DataType>
+    </column>
+    <column id="23" parent="12" name="klantpostcode">
+      <Position>4</Position>
+      <DataType>varchar(75)|0</DataType>
+    </column>
+    <column id="24" parent="12" name="klantplaats">
+      <Position>5</Position>
+      <DataType>varchar(75)|0</DataType>
+    </column>
+    <key id="25" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>klantid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="26" parent="13" name="usersid">
+      <Position>1</Position>
+      <DataType>int(75)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="27" parent="13" name="gebruikersnaam">
+      <Position>2</Position>
+      <DataType>varchar(75)|0</DataType>
+    </column>
+    <column id="28" parent="13" name="email">
+      <Position>3</Position>
+      <DataType>varchar(75)|0</DataType>
+    </column>
+    <column id="29" parent="13" name="wachtwoord">
+      <Position>4</Position>
+      <DataType>varchar(75)|0</DataType>
+    </column>
+    <column id="30" parent="13" name="admin">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="31" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>usersid</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

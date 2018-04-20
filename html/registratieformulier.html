@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registratieformulier</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+          integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="../css/menustyles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>AUTOGARAGE ROTTERDAM</h1>
+</header>
+<nav>
+    <button class="dropdownbutton"><i class="fas fa-user-circle"></i><a href="../html/index.html"> Inloggen</a></button>
+    <button class="dropdownbutton"><i class="fas fa-user-plus"></i><a href="../html/registratieformulier.html"> Registreren</a></button>
+</nav>
+<div class="title">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2>Welkom op de website van AUTOGARAGE ROTTERDAM</h2>
+
+</div>
+<main>
+    <p>Vul hier onder het formulier in om je aan te melden.</p>
+    <form action="../php/inloggen.php" method="post">
+        <label for="gebruikersnaam">Gebruikersnaam:<span>*</span></label>
+        <input required id="gebruikersnaam" name="gebruikersnaam" type="text">
+        <label  for="email">E-mail:<span>*</span></label>
+        <input required id="email" name="email" type="email">
+        <label for="wachtwoord">Wachtwoord:<span>*</span></label>
+        <input required id="wachtwoord" name="wachtwoord" type="password">
+        <input class="aanmelden" type="submit" value="Aanmelden">
+        <p>Alle velden met <span>*</span> zijn verplicht!</p>
+    </form>
+</main>
+</body>
+</html>
